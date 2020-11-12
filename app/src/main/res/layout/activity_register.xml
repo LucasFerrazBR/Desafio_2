@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cor_azul"
+            app:title="@string/toolbar_register"
+            app:titleTextColor="@color/cor_branca"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"/>
+
+    <include
+        android:id="@+id/include_register"
+        layout="@layout/register_body"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/botaoRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_registrar"
+        android:background="@color/cor_vermelho"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/cor_branca"/>
+
+    </LinearLayout>
+</ScrollView>

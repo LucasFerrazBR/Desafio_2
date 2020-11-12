@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/card_imagem"
+            android:background="@drawable/tony_imagem"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_nome"
+            android:text="Name"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_endereco"
+            android:text="Endereco"
+            android:layout_marginTop="243dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/cor_cinza"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_fecha"
+            android:text="Fecha"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/cor_cinza"/>
+
+
+
+</androidx.cardview.widget.CardView>
